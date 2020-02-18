@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>I am Arnold</title>
+        <meta name="description" content="Personal website of Arnold Christopher Fernando">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link href="/assets/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav id="nav_bar">
+            <a class="nav_link active" href="#" data-index="0">HOME</a>
+            <a class="nav_link" href="#" data-index="1">ABOUT</a>
+            <a class="nav_link" href="#" data-index="2">PROJECTS</a>
+            <a class="nav_link" href="#" data-index="3">CONTACT ME</a>
+        </nav>
+        <button class="nav_sides_btn left" value="-1"><</button>
+        <button class="nav_sides_btn right" value="1">></button>
+        <div id="main_container">
+            <div id="banner_face"></div>
+            <section id="banner">
+                <div id="banner_text_container">
+                    <div id="banner_text">
+                        <h2>WHO IS</h2>
+                        <h1>ARNOLD</h1>
+                        <h6>WEB DEVELOPER | FULL STACK</h6>
+                        <div class="banner_quote">
+                            <p>Fast, reliable, and intuitive websites?</p>
+                            <p>Say no more.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about">
+                <div id="properties_container" class="container">
+                    <div class="property">
+                        <i class="fas fa-bolt"></i>
+                        <span class="property_name">Fast</span>
+                        <span>Someone once told me "Speed is important."
+                            I couldn't agree more.</span>
+                    </div>
+                    <div class="property">
+                        <i class="far fa-eye"></i>
+                        <span class="property_name">Interactive</span>
+                        <span>I like to make things that feel alive.
+                            I mean, no one likes to play with a dead cat.
+                        </span>
+                    </div>
+                    <div class="property">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span class="property_name">Responsive</span>
+                        <span>Looks good and functions properly no matter the resolution or the device.</span>
+                    </div>
+                    <div class="property">
+                        <i class="fas fa-seedling"></i>
+                        <span class="property_name">Easy</span>
+                        <span>Technology should lessen the workload not increase it!</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <img id="about_image" src="/assets/img/about.png" alt="Arnold About Image">
+                    <h3>I am Arnold</h3>
+                    <p>I am currently a freelance full stack web developer. I have a strong desire in creating visually appealing UIs and writing fast and optimized code.
+                        <br><br><a class="nav_link" href="#" data-index="3">Let's turn your dream into reality.</a>
+                    </p>
+                </div>
+                <div class="container">
+                    <div class="skill"><span>PHP</span><progress value="0" max="100">90%</progress></div>
+                    <div class="skill"><span>HTML</span><progress value="0" max="100">85%</progress></div>
+                    <div class="skill"><span>CSS</span><progress value="0" max="100">80%</progress></div>
+                    <div class="skill"><span>JavaScript</span><progress value="0" max="100">85%</progress></div>
+                    <div class="skill"><span>SQL</span><progress value="0" max="100">80%</progress></div>
+                    <div class="skill"><span>Angular</span><progress value="0" max="100">60%</progress></div>
+                    <div class="skill"><span>Photoshop</span><progress value="0" max="100">75%</progress></div>
+                </div>
+            </section>
+            <section id="projects">
+                <div>
+                    <i class="fas fa-tools"></i>
+                    <p>Coming soon. Stay tuned.</p>
+                </div>
+            </section>
+            <section id="contact">
+                <div id="form_container">
+                    <form id="form_contact" action="javascript:submitForm();">
+                        <h6>Got a job for me? Leave a message!</h6>
+                        <input id="input_name" placeholder="Margot Dominique" type="text" name="name" pattern="[A-Za-z .]+" title="Please use letters, spaces, and periods only." required>
+                        <input id="input_email" placeholder="margotdominique@mailinator.com" type="email" name="email" required>
+                        <textarea id="input_message" placeholder="Hey Arnold!" rows="3" minlength="10" required></textarea>
+                        <button id="btn_submit" type="submit">
+                            SUBMIT
+                            <i id="form_loading" class="fas fa-spinner"></i>
+                            <i id="form_success" class="far fa-check-circle"></i>
+                            <i id="form_error" class="fas fa-times-circle"></i>
+                        </button>
+                        <span id="success_message" class="form_message">Your message has been sent. Thanks!</span>
+                        <span id="error_message" class="form_message">Your message could not be sent. Please try again later.</span>
+                    </form>
+                </div>
+                <div id="contact_details">
+                    <a class="contact_detail" href="tel:+639218931684" target="_top"><i class="fas fa-mobile-alt fa-fw"></i>+63 921 893 1684</a>
+                    <a class="contact_detail" href="mailto:fernandoarnoldchristopher@gmail.com" target="_top"><i class="far fa-envelope fa-fw"></i>fernandoarnoldchristopher@gmail.com</a>
+                    <span class="contact_detail"><i class="fas fa-home fa-fw"></i>Mandaluyong City, PH</span>
+                    <a class="contact_detail" href="/assets/files/ArnoldChristopherFernando.pdf" target="_blank"><i class="fas fa-file-download fa-fw"></i>View or download my resume</a>
+                    <div class="social_medias">
+                        <a class="social_media fb" href="https://www.facebook.com/ArnChr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social_media ln" href="https://www.linkedin.com/in/arnold-christopher-fernando-679a90146/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social_media so" href="https://stackoverflow.com/users/12407377/arsi" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+                    </div>
+                </div>
+                <footer>Arnold Christopher Fernando <i class="far fa-copyright"></i> 2020</footer>
+            </section>
+        </div>
+        <script src="/assets/js/particleMapper.js"></script>
+        <script src="/assets/js/main.js" async defer></script>
+    </body>
+</html>
