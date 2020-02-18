@@ -478,6 +478,10 @@ progress[value]::-webkit-progress-value {
     color: white;
 }
 
+#form_loading {
+    top: 8px !important;
+}
+
 #form_contact.loading #form_loading {
     opacity: 1;
 }
