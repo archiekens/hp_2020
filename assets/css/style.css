@@ -472,10 +472,6 @@ progress[value]::-webkit-progress-value {
     transition: opacity 0.3s ease-in-out;
 }
 
-#form_loading {
-    top: 8px !important;
-}
-
 #form_contact.loading button {
     border-color: var(--main-color);
     background-color: var(--main-color);
