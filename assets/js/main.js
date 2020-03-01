@@ -86,7 +86,7 @@ function init() {
 
     ctx = canvas.getContext( '2d' );
     man = false;
-    tog = true;
+    tog = false;
 
     list = [];
 
@@ -113,7 +113,6 @@ function init() {
 function step() {
     if (currentIndex == 0) {
         if ( tog = !tog ) {
-
             if ( !man ) {
                 THICKNESS /= 2;
             }
@@ -137,7 +136,6 @@ function step() {
             }
     
         } else {
-    
             b = ( a = ctx.createImageData( w, h ) ).data;
     
             for ( i = 0; i < list.length; i++ ) {
